@@ -1,3 +1,96 @@
 html{
-    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+header{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100%;
+    margin-right: 15px;
+    margin-top: 15px;
+    font-size: 13px;
+}
+
+.header{
+    margin-left: 20px;
+}
+
+#profile-pic{
+    width: 30px;
+    height: auto;
+    border-radius: 50%;
+}
+
+#google-apps{
+    width: 30px;
+}
+
+#search{
+    display: grid;
+    justify-items: center;
+    grid-row: 30% 30% 20% 20%;
+    grid-column: auto 30px 30px auto;
+    grid-template-areas: "logo logo logo logo"
+                         "srch srch srch srch"
+                         ". goog luck ."
+                         "ptbr ptbr ptbr ptbr";
+}
+
+#mag-lens{
+    width: 5%;
+    height: auto;
+    position: absolute;
+    top: 223px;
+    left: 110px;
+}
+
+#microphone{
+    width: 3%;
+    height: auto;
+    position: absolute;
+    top: 223px;
+    left: 560px;
+}
+
+#google-logo{
+    padding-top: 4em;
+    padding-bottom: 1em;
+    grid-area: logo;
+}
+
+#search-bar{
+    margin-bottom: 2em;
+    width: 500px;
+    height: 44px;
+    border-radius: 24px;
+    border: 1px solid #dfe1e5;
+    grid-area: srch;
+}
+
+#google-search{
+    grid-area: goog;
+}
+#lucky-search{
+    grid-area: luck;
+}
+#pt-br{
+    grid-area: ptbr;
+}
+
+#search-bar:hover{
+    box-shadow: 0 1px 6px rgb(32 33 36 / 28%);
+}
+
+footer{
+    height: 100%;
+}
+
+#footer-left{
+    display: flex;
+}
+
+#footer-right{
+    display: flex;
+    justify-content: flex-end;
 }

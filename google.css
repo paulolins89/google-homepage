@@ -30,11 +30,11 @@ header{
     display: grid;
     justify-items: center;
     grid-row: 30% 30% 20% 20%;
-    grid-column: auto 30px 30px auto;
-    grid-template-areas: "logo logo logo logo"
-                         "srch srch srch srch"
-                         ". goog luck ."
-                         "ptbr ptbr ptbr ptbr";
+    grid-column: auto 300px auto;
+    grid-template-areas: "logo logo logo"
+                         "srch srch srch"
+                         ". butt ."
+                         "ptbr ptbr ptbr";
 }
 
 #mag-lens{
@@ -43,14 +43,6 @@ header{
     position: absolute;
     top: 223px;
     left: 110px;
-}
-
-#microphone{
-    width: 3%;
-    height: auto;
-    position: absolute;
-    top: 223px;
-    left: 560px;
 }
 
 #google-logo{
@@ -68,12 +60,21 @@ header{
     grid-area: srch;
 }
 
+.search-buttons{
+    display: flex;
+    grid-area: butt;
+}
+
 #google-search{
-    grid-area: goog;
+    order: 1;
+    margin-right: 150px;
 }
+
 #lucky-search{
-    grid-area: luck;
+    order: 2;
+    margin-left: 150px;
 }
+
 #pt-br{
     grid-area: ptbr;
 }
@@ -83,14 +84,18 @@ header{
 }
 
 footer{
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
     height: 100%;
+    width: 100%
 }
 
-#footer-left{
-    display: flex;
+.footer-left{
+    margin-right: 20px;
 }
 
-#footer-right{
-    display: flex;
-    justify-content: flex-end;
+.footer-right{
+    margin-left: 20px;
 }

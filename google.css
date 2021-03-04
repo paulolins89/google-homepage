@@ -12,6 +12,15 @@ header{
     font-size: 13px;
 }
 
+#gmail-link, #images-link{
+    text-decoration: none;
+    color: rgb(0,0,0, 0.87);
+}
+
+#gmail-link:hover, #images-link:hover{
+    text-decoration: underline;
+}
+
 .header{
     margin-left: 20px;
 }
@@ -46,15 +55,15 @@ header{
 }
 
 #google-logo{
-    padding-top: 4em;
-    padding-bottom: 1em;
+    padding-top: 1em;
+    padding-bottom: 1.5em;
     grid-area: logo;
 }
 
 #search-bar{
-    margin-bottom: 2em;
-    width: 500px;
-    height: 44px;
+    margin-bottom: 2.7em;
+    width: 580px;
+    height: 42px;
     border-radius: 24px;
     border: 1px solid #dfe1e5;
     grid-area: srch;
@@ -63,6 +72,18 @@ header{
 .search-buttons{
     display: flex;
     grid-area: butt;
+}
+
+button{
+    background-color: transparent;
+    border: none;
+    padding: 10px 10px 10px 10px;
+    font-size: 14px;
+}
+
+button:hover{
+    border: 1px solid rgb(209, 205, 205);
+    border-radius: 4px;
 }
 
 #google-search{
@@ -77,25 +98,47 @@ header{
 
 #pt-br{
     grid-area: ptbr;
+    margin-top: 2em;
+    font-size: small;
+    color:rgb(0,0,0, 0.87);
 }
+
+#pt-br-link{
+    text-decoration: none;
+}
+
+#pt-br-link:hover{
+    text-decoration: underline;
+}
+
 
 #search-bar:hover{
     box-shadow: 0 1px 6px rgb(32 33 36 / 28%);
 }
 
 footer{
+    position: fixed;
+    bottom: 0;
+    left:0;
     display: flex;
     justify-content: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
     flex-wrap: wrap;
-    height: 100%;
-    width: 100%
+    width: 100%;
+    background-color:rgba(243, 243, 243, 0.87);
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-top: 1px solid rgb(212, 212, 212);
 }
 
-.footer-left{
-    margin-right: 20px;
+.footer-left, .footer-right{
+    margin-right: 10px;
+    margin-left: 10px;
+    text-decoration: none;
+    color:rgb(114, 114, 114);
+    font-size: 14px;
 }
 
-.footer-right{
-    margin-left: 20px;
+.footer-left:hover, .footer-right:hover{
+    text-decoration: underline;
 }
